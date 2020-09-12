@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <LogoGlobal />
       <h1 class="title">woksome-freelance</h1>
       <div class="links">
         <a
@@ -28,7 +28,9 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  name: 'Index'
+})
 </script>
 
 <style>
