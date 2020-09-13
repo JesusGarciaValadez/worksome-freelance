@@ -24,13 +24,6 @@
             </div>
             <!--
               Profile dropdown panel, show/hide based on dropdown state.
-
-              Entering: "transition ease-out duration-100"
-                From: "transform opacity-0 scale-95"
-                To: "transform opacity-100 scale-100"
-              Leaving: "transition ease-in duration-75"
-                From: "transform opacity-100 scale-100"
-                To: "transform opacity-0 scale-95"
             -->
             <UserOptions />
           </div>
@@ -42,10 +35,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '../global/Logo.vue'
-import HamburguerButton from '../global/HamburguerButton.vue'
-import QuestionMarkCircleIcon from '../global/QuestionMarkCircleIcon.vue'
-import UserButton from "../global/UserButton.vue"
+import Logo from './global/Logo.vue'
+import HamburguerButton from './global/HamburguerButton.vue'
+import QuestionMarkCircleIcon from './global/QuestionMarkCircleIcon.vue'
+import UserButton from "./global/UserButton.vue"
 import UserOptions from "~/components/global/UserOptions.vue"
 
 export default Vue.extend({
