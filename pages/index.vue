@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <LogoGlobal />
       <h1 class="title">woksome-freelance</h1>
       <div class="links">
         <a
