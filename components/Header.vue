@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-indigo-600">
+  <header class="bg-indigo-600">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
 
@@ -37,15 +37,15 @@
         </div>
       </div>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from './Logo.vue'
-import HamburguerButton from './HamburguerButton.vue'
-import QuestionMarkCircleIcon from './QuestionMarkCircleIcon.vue'
-import UserButton from "./UserButton.vue"
+import Logo from '../global/Logo.vue'
+import HamburguerButton from '../global/HamburguerButton.vue'
+import QuestionMarkCircleIcon from '../global/QuestionMarkCircleIcon.vue'
+import UserButton from "../global/UserButton.vue"
 import UserOptions from "~/components/global/UserOptions.vue"
 
 export default Vue.extend({
