@@ -1,11 +1,16 @@
 export const state = () => ({
-  isOn: false,
+  toggleMenu: false,
+  toggleUserOptions: false
 })
 
 const TOGGLE_MENU = 'toggleMenu'
+const TOGGLE_USER_OPTIONS = 'toggleUserOptions'
 
 export const mutations = {
   [TOGGLE_MENU] (state) {
-    state.isOn = !state.isOns
+    state.toggleMenu = !state.toggleMenu
+  },
+  [TOGGLE_USER_OPTIONS] (state) {
+    state.toggleUserOptions = !state.toggleUserOptions
   }
 }
