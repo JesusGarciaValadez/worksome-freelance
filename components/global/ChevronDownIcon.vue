@@ -13,7 +13,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'ChevronIcon',
+  name: 'ChevronDownIcon',
   props: ['className']
 })
 </script>

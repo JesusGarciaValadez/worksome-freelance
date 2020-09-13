@@ -4,23 +4,31 @@
     id="user-menu"
     aria-label="User menu"
     aria-haspopup="true"
+    @click="toggleUserOptions"
   >
     <div class="flex-shrink-0 flex justify-center relative">
       <Photo className="h-10 w-10 rounded-full" />
-      <ChevronIcon className="absolute h-6 w-6 block inset-x-auto bottom-0 z-10" />
+      <ChevronUpIcon v-if="this.$store.state.toggleUserOptions" className="block absolute h-6 w-6 inset-x-auto bottom-0 z-10" />
+      <ChevronDownIcon v-else className="block absolute h-6 w-6 inset-x-auto bottom-0 z-10" />
     </div>
   </button>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapMutations } from 'vuex'
 import Photo from './Photo.vue'
-import ChevronIcon from './ChevronIcon.vue'
+import ChevronDownIcon from './ChevronDownIcon.vue'
+import ChevronUpIcon from './ChevronUpIcon.vue'
 
 export default Vue.extend({
   components: {
-    ChevronIcon,
+    ChevronDownIcon,
+    ChevronUpIcon,
     Photo
+  },
+  methods: {
+    ...mapMutations(['toggleUserOptions'])
   },
   name: 'UserButton'
 })
