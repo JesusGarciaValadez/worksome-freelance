@@ -16,3 +16,18 @@
     </main>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import Header from '@/components/global/Header.vue'
+import Navigation from '@/components/global/Navigation.vue'
+import Footer from '@/components/global/Footer.vue'
+
+export default Vue.extend({
+  components: {
+    Header,
+    Navigation,
+    Footer
+  }
+})
+</script>
