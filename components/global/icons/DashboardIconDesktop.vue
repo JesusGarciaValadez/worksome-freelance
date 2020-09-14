@@ -12,14 +12,10 @@
   </svg>
 </template>
 
-<script lang="tss">
+<script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
   name: "DashboardIconDesktop"
 })
 </script>
-
-<style scoped>
-
-</style>

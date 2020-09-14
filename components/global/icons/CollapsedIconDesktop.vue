@@ -15,7 +15,3 @@ export default Vue.extend({
   name: "ExpandedIconDesktop"
 })
 </script>
-
-<style scoped>
-
-</style>

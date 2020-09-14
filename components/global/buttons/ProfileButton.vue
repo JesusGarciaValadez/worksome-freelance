@@ -9,7 +9,7 @@
 
 <script>
 import Vue from 'vue'
-import UserIconDesktop from './UserIconDesktop.vue'
+import UserIconDesktop from '../icons/UserIconDesktop.vue'
 
 export default Vue.extend({
   components: {

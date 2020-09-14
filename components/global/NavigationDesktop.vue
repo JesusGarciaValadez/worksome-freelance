@@ -16,17 +16,17 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import DashboardButton from './DashboardButton.vue'
-import ProfileButton from './ProfileButton.vue'
-import JobsButton from './JobsButton.vue'
-import FreelancesButton from './FreelancesButton.vue'
+import DashboardButton from './buttons/DashboardButton.vue'
+import ProfileButton from './buttons/ProfileButton.vue'
+import JobsButton from './buttons/JobsButton.vue'
+import FreelancesButton from './buttons/FreelancesButton.vue'
 
 export default Vue.extend({
   components:{
     DashboardButton,
     FreelancesButton,
+    JobsButton,
     ProfileButton,
-    JobsButton
   },
   name: "NavigationDesktop"
 })

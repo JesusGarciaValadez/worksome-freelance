@@ -17,9 +17,9 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapMutations } from 'vuex'
-import Photo from './Photo.vue'
-import ChevronDownIcon from './ChevronDownIcon.vue'
-import ChevronUpIcon from './ChevronUpIcon.vue'
+import Photo from '../Photo.vue'
+import ChevronDownIcon from '../icons/ChevronDownIcon.vue'
+import ChevronUpIcon from '../icons/ChevronUpIcon.vue'
 
 export default Vue.extend({
   components: {

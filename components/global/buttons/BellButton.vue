@@ -6,7 +6,7 @@
 
 <script>
 import Vue from 'vue'
-import BellIcon from '~/components/global/BellIcon.vue'
+import BellIcon from '~/components/global/icons/BellIcon.vue'
 
 export default Vue.extend({
   components: {

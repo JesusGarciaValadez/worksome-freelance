@@ -9,7 +9,7 @@
     css
   >
     <div
-      :class="[this.$store.state.toggleUserOptions ? 'block' : 'hidden']"
+      v-show="this.$store.state.toggleUserOptions"
       class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg rounded-md bg-white p-3"
     >
       <p class="text-sm text-gray-800">Jesús García Valadez</p>

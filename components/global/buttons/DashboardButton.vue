@@ -11,7 +11,7 @@
 
 <script>
 import Vue from 'vue'
-import DashboardIconDesktop from './DashboardIconDesktop.vue'
+import DashboardIconDesktop from '../icons/DashboardIconDesktop.vue'
 
 export default Vue.extend({
   components: {
@@ -20,7 +20,3 @@ export default Vue.extend({
   name: "DashboardButton"
 })
 </script>
-
-<style scoped>
-
-</style>
