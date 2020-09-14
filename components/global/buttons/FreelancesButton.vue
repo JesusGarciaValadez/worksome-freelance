@@ -18,7 +18,7 @@
       leave-to-class="transform opacity-0 scale-95"
       css
     >
-      <div class="mt-1 space-y-1 pl-12"
+      <div class="mt-1 space-y-1"
            v-show="this.$data.menuOpen"
       >
         <nuxt-link to="/profiles"

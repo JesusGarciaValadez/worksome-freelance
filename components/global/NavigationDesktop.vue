@@ -2,13 +2,15 @@
   <div class="hidden md:flex md:flex-shrink-0">
     <div class="flex flex-col w-64">
       <!-- Sidebar component, swap this element with another sidebar if you like -->
-      <div class="mt-5 flex-grow flex flex-col">
-        <nav class="flex-1 px-2 bg-white">
-          <DashboardButton />
-          <ProfileButton />
-          <JobsButton />
-          <FreelancesButton />
-        </nav>
+      <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
+        <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+          <nav class="flex-1 px-2 bg-white">
+            <DashboardButton />
+            <ProfileButton />
+            <JobsButton />
+            <FreelancesButton />
+          </nav>
+        </div>
       </div>
     </div>
   </div>

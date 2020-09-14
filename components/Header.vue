@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-indigo-600 relative z-10">
+  <header class="bg-indigo-500 relative z-10">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
