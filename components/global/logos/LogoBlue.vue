@@ -1,5 +1,5 @@
 <template>
-  <img class="h-8 w-auto" src="/workflow-logo-blue.webp" alt="Worksome">
+  <img class="block h-8 w-auto" src="/worksome-logo-blue.webp" alt="Worksome">
 </template>
 
 <script lang="ts">
