@@ -1,21 +1,22 @@
 <template>
-  <header class="bg-indigo-600">
+  <header class="bg-indigo-600 relative z-10">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
-
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
           <!-- Mobile menu button-->
           <HamburguerButton />
         </div>
-        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
           <div class="flex-shrink-0 flex items-center justify-center">
             <nuxt-link to="/">
-              <Logo />
+              <LogoWhite />
             </nuxt-link>
           </div>
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <QuestionMarkCircleIcon />
+          <nuxt-link to="/faq">
+            <QuestionMarkCircleIcon />
+          </nuxt-link>
 
           <!-- Profile dropdown -->
           <div class="ml-3 relative">
@@ -35,36 +36,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from './global/Logo.vue'
-import HamburguerButton from './global/HamburguerButton.vue'
-import QuestionMarkCircleIcon from './global/QuestionMarkCircleIcon.vue'
-import UserButton from "./global/UserButton.vue"
+import LogoWhite from './global/logos/LogoWhite.vue'
+import HamburguerButton from './global/buttons/HamburguerButton.vue'
+import QuestionMarkCircleIcon from './global/icons/QuestionMarkCircleIcon.vue'
+import UserButton from "./global/buttons/UserButton.vue"
 import UserOptions from "~/components/global/UserOptions.vue"
 
 export default Vue.extend({
   components: {
     HamburguerButton,
-    Logo,
+    LogoWhite,
     QuestionMarkCircleIcon,
     UserButton,
     UserOptions,
-  },
-  computed: {
-    isHome: function () {
-      return this.$route.name === 'index'
-    },
-    isExperience: function () {
-      return this.$route.name === 'experience'
-    },
-    isPortfolio: function () {
-      return this.$route.name === 'portfolio'
-    },
-    isTechnologies: function () {
-      return this.$route.name === 'technologies'
-    },
-    isCommunity: function () {
-      return this.$route.name === 'community'
-    },
   },
   filters: {
     capitalize: function (value: string) {

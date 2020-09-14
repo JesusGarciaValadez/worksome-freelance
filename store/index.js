@@ -3,14 +3,14 @@ export const state = () => ({
   toggleUserOptions: false
 })
 
-const TOGGLE_MENU = 'toggleMenu'
-const TOGGLE_USER_OPTIONS = 'toggleUserOptions'
+export const TOGGLE_MENU_ACTION = 'toggleMenu'
+export const TOGGLE_USER_OPTIONS_ACTION = 'toggleUserOptions'
 
 export const mutations = {
-  [TOGGLE_MENU] (state) {
+  [TOGGLE_MENU_ACTION] (state) {
     state.toggleMenu = !state.toggleMenu
   },
-  [TOGGLE_USER_OPTIONS] (state) {
+  [TOGGLE_USER_OPTIONS_ACTION] (state) {
     state.toggleUserOptions = !state.toggleUserOptions
   }
 }
