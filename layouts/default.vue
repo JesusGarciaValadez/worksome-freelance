@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
 
-    <div class="h-screen flex overflow-hidden bg-gray-100">
+    <div class="h-screen flex overflow-hidden bg-gray-100 relative z-0">
       <Navigation />
 
       <div class="flex flex-col w-0 flex-1 overflow-hidden">
