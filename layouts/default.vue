@@ -9,15 +9,19 @@
         <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
           <div class="pt-2 pb-6 md:py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              <!-- Replace with your content -->
               <div class="py-4">
                 <div class="h-96">
-                  <Nuxt />
+                  <div class="overflow-hidden rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                      <Nuxt />
 
-                  <Footer />
+                      <div class="px-4 py-4 sm:px-6">
+                        <Footer />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- /End replace -->
             </div>
           </div>
         </main>
